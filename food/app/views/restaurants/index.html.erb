@@ -1,5 +1,6 @@
-<div class="row">
-  <% @restaurants.each do |restaurant| %>
+<div class="center">
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
     <div class="col-md-3">
       <div class="thumbnail">
         <%= image_tag restaurant.image.url %>
@@ -9,6 +10,7 @@
           <%= link_to 'Show', restaurant, class: "btn btn-link" %>
           <%= link_to 'Edit', edit_restaurant_path(listing), class: "btn btn-link" %>
           <%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+          </div>
         </div>
       </div>
     </div>
