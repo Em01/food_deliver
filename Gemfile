@@ -34,7 +34,7 @@ gem "carrierwave"
 
 gem "fog"
 
-gem "figaro"
+gem "geocoder"
 
 # gem 'sdoc', '~> 0.4.0',          group: :doc
 
